@@ -19,6 +19,5 @@ public class Login extends BaseDriver {
         re.email.sendKeys(Register.eMailChange);
         re.password.sendKeys(Register.passwordChange);
         Tools.ActionClick(le.loginButton);
-
     }
 }
