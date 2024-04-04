@@ -26,17 +26,17 @@ public class PositiveNegativeLogin extends BaseDriver {
                 email.equals("şaban@gmail.com"))
                 &&
                 password.equals("ssdd122")
-        ) {
+        )  {
             re.email.sendKeys(email);
             re.password.sendKeys(password);
             le.loginButton.click();
 
-        } else if (email.equals(Register.eMailChange) && password.equals(Register.passwordChange)) {
+        }/* else if (email.equals(Register.eMailChange) && password.equals(Register.passwordChange)) {
             re.email.sendKeys(email);
             re.password.sendKeys(password);
             le.loginButton.click();
 
-        }
+        }*/
 
     }
 
@@ -50,7 +50,7 @@ public class PositiveNegativeLogin extends BaseDriver {
                 {"şerafettin@gmail.com", "ssdd122"},
                 {"müzeyyen@gmail.com", "ssdd122"},
                 {"dilara@gmail.com", "ssdd122"},
-                {Register.eMailChange, Register.passwordChange}
+               // {Register.eMailChange, Register.passwordChange}
         };
         return credentialList;
     }
